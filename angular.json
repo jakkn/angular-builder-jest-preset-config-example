@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-builder-jest-preset-issue-repro": {
+    "angular-builder-jest-config-example": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-builder-jest-preset-issue-repro",
+            "outputPath": "dist/angular-builder-jest-config-example",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-builder-jest-preset-issue-repro:build:production"
+              "browserTarget": "angular-builder-jest-config-example:build:production"
             },
             "development": {
-              "browserTarget": "angular-builder-jest-preset-issue-repro:build:development"
+              "browserTarget": "angular-builder-jest-config-example:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-builder-jest-preset-issue-repro:build"
+            "browserTarget": "angular-builder-jest-config-example:build"
           }
         },
         "test": {
